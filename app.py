@@ -10,9 +10,9 @@ warnings.filterwarnings('ignore')
 
 # Load joblib model
 try:
-    Model = load('SleepDisorderModel.joblib')
+    Model = load('XGBoost.joblib')
 except FileNotFoundError:
-    st.error("Model file not found. Please upload the 'SleepDisorderModel.joblib' file.")
+    st.error("Model file not found. Please upload the 'XGBoost.joblib' file.")
 
 # Title for the App
 st.title("Sleep Disorder Classification App")
